@@ -200,39 +200,39 @@
                         .text(dateFormat(d.date));
                 }
 
-                              
-const type = d3.annotationLabel
 
-const annotations = [{
-    note: {
-        bgPadding: 5,
-        title: "Average Deaths 1983-1992 74 2010-2019 56.3"
-    },
-    className: "show-bg",
-    x: 390,
-    y: 230,
-    dy: 0,
-    dx: 350,
-    subject: {
-        radius: 50,
-        radiusPadding: 5
-    },
-    connector: {
-        lineType: "horizontal"
-    }
-}]
+                const type = d3.annotationLabel
 
-const makeAnnotations = d3.annotation()
-    .editMode(true)
-    .notePadding(15)
-    .type(type)
+                const sceneThreeAnnotations = [{
+                    note: {
+                        bgPadding: 5,
+                        title: "Average Deaths 1983-1992 74 2010-2019 56.3"
+                    },
+                    className: "show-bg",
+                    x: 390,
+                    y: 230,
+                    dy: 0,
+                    dx: 350,
+                    subject: {
+                        radius: 50,
+                        radiusPadding: 5
+                    },
+                    connector: {
+                        lineType: "horizontal"
+                    }
+                }]
 
-    .annotations(annotations)
+                const makeAnnotations = d3.annotation()
+                    .editMode(true)
+                    .notePadding(15)
+                    .type(type)
 
-d3.select("#scene-3")
-    .append("g")
-    .attr("class", "annotation-group")
-    .call(makeAnnotations)
+                    .annotations(sceneThreeAnnotations)
+
+                d3.select("#scene-3")
+                    .append("g")
+                    .attr("class", "annotation-group")
+                    .call(makeAnnotations)
 
 
             }
