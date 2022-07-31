@@ -1,0 +1,54 @@
+body {
+    margin: auto;
+    padding-top: 45px;
+    font: 11px arial;
+}
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+#buttons {
+        overflow: hidden;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0; 
+        width: 100%;
+      font-size: 20px;
+    }
+    .explore-button {
+          float: right;
+          display: inline-block;
+          padding: 0.40em 1.0em;
+          
+          margin:0 0.1em 0.1em 0;
+          border-radius:2px;
+          box-sizing: border-box;
+          text-decoration:none;
+          font-family:'Roboto',sans-serif;
+          font-weight:300;
+          color: white;
+          background-color: #383838;
+          text-align: center;
+          transition: all 0.2s;
+       }
+
+       .explore-button-unselected{
+          float: right;
+          display: inline-block;
+          padding: 0.35em 1.2em;
+          
+          margin:0 0.1em 0.1em 0;
+          border-radius:2px;
+          box-sizing: border-box;
+          text-decoration:none;
+          font-family:'Roboto',sans-serif;
+          font-weight:300;
+          color: #383838;
+          background-color: white;
+          text-align: center;
+          transition: all 0.2s;
+       }
+    .explore-button:hover{
+      color: #383838;
+      background-color: white;
+        }
